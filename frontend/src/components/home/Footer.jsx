@@ -2,9 +2,9 @@ import React from 'react'
 
 const Footer = () => {
     return (
-        <footer className='flex justify-center items-center w-screen flex-col gap-4 bg-[#EDF0EF] pt-[25px] tracking-wide font-medium text-lg'>
-            <div className="flex justify-evenly w-11/12">
-                <div>
+        <footer className='flex justify-center items-center w-screen flex-col gap-4 bg-[#EDF0EF]  tracking-wide font-medium text-md'>
+            <div className="flex justify-evenly w-11/12 py-8">
+                <div className='flex flex-col gap-4'>
                     <img src="/logo.png" alt="Cafe" className='w-[75px]' />
                     <a href="https://www.google.co.in/maps/place/MG+ROAD+METRO+STATION/@12.9756295,77.6040478,17z/data=!3m1!4b1!4m6!3m5!1s0x3bae17005c679be5:0x7fe614760a22fc8e!8m2!3d12.9756295!4d77.6066227!16s%2Fg%2F11v_9gwhsj?entry=ttu">
                         <p className='text-sm flex flex-col'><span className='font-semibold'>Address:</span>
@@ -16,7 +16,7 @@ const Footer = () => {
                     </a>
                 </div>
                 <ul>
-                    <li className='!font-semibold text-[#003B40] text-xl'>
+                    <li className='!font-semibold text-[#003B40] text-lg'>
                         Company
                     </li>
                     <li>About Us</li>
@@ -25,13 +25,13 @@ const Footer = () => {
                 </ul>
                 <div className='flex flex-col gap-4'>
                     <ul>
-                        <li className='font-semibold text-[#003B40]'>
+                        <li className='font-semibold text-[#003B40] text-lg'>
                             Contact Us
                         </li>
                         <li>Help & Support</li>
                     </ul>
                     <ul>
-                        <li className='font-semibold text-[#003B40]'>
+                        <li className='font-semibold text-[#003B40] text-lg'>
                             Legal
                         </li>
                         <li>Terms & Conditions</li>
@@ -40,7 +40,7 @@ const Footer = () => {
                     </ul>
                 </div>
                 <ul>
-                    <li className='font-semibold text-[#003B40]'>
+                    <li className='font-semibold text-[#003B40] text-lg'>
                         Cities we serve:
                     </li>
                     <li>Bangalore</li>
