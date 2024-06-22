@@ -6,8 +6,8 @@ import {
   Routes
 } from "react-router-dom";
 import Root from "./components/home/Root";
-import Dashboard from "./components/home/Dashboard";
 import About from "./components/home/About";
+import CafePage from "./components/home/CafePage";
 
 
 function App() {
@@ -17,7 +17,7 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Root />} />
-          <Route path="/dashboard" element={<Dashboard />} />
+          <Route path="/cafepage/:id" element={<CafePage />} />
           <Route path="/about" element={<About />} />
           {/* <Route path="*" element= */}
         </Routes>

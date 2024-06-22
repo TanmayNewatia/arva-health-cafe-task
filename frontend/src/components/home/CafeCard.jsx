@@ -1,7 +1,7 @@
 import React from 'react'
 import { FaRegHeart } from "react-icons/fa";
 
-const CafeCard = () => {
+const CafeCard = ({ items }) => {
     return (
         <div className='w-[250px]'>
             <div className='flex justify-end'>
@@ -11,14 +11,14 @@ const CafeCard = () => {
                     </div>
                 </div>
             </div>
-            <div>
-                <img src="/assets/cafe.svg" alt="" className='w-[250px]' />
+            <a href={`/cafepage/${items.id}`}>
+                <img src={items.images[0]["url"]} alt="" className='w-[250px] rounded-3xl' />
                 <div>
-                    <p className='text-[#003B40] font-bold tracking-wider'>Home Coffee Roasters</p>
-                    <div className='text-md flex items-center gap-2'><img src="/assets/star.svg" alt="star" className='w-[15px] h-[15px]' /><span>4.5</span><p className='text-[#B7C1C2]'>1,200 reviews</p></div>
-                    <p className='text-[#003B40] text-sm font-medium tracking-widest'>3.8 miles</p>
+                    <p className='text-[#003B40] font-bold tracking-wider'>{items.name}</p>
+                    <div className='text-md flex items-center gap-2'><img src="/assets/star.svg" alt="star" className='w-[15px] h-[15px]' /><span>{items.ratings[0]["score"]}</span><p className='text-[#B7C1C2]'>1,200 reviews</p></div>
+                    <p className='text-[#003B40] text-sm font-medium tracking-widest'>{ }</p>
                 </div>
-            </div>
+            </a>
         </div>
     )
 }
