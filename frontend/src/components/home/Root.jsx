@@ -2,7 +2,6 @@ import React from 'react';
 import { IoSearchOutline } from "react-icons/io5";
 import { LuSettings2 } from "react-icons/lu";
 import CafeCard from './CafeCard';
-import ItemCard from '../cafe/ItemCard';
 
 const Root = () => {
     return (

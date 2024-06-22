@@ -1,7 +1,7 @@
 import React from 'react'
-import { FaPlus, FaRegHeart } from "react-icons/fa6";
+import { FaPlus } from "react-icons/fa6";
 
-const ItemCard = () => {
+const itemCard = () => {
     return (
         <div className='w-11/12 mx-auto min-w-[300px] max-w-[600px] bg-[#EDF0EF] p-2 rounded-2xl'>
             <div className='flex justify-end'>
@@ -23,4 +23,4 @@ const ItemCard = () => {
     )
 }
 
-export default ItemCard
+export default itemCard
