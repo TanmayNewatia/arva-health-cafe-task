@@ -15,7 +15,7 @@ jobs:
       - name: Login to docker hub
         run: docker login -u ${{secrets.DOCKER_USERNAME}} -p ${{secrets.DOCKER_PASSWORD}}
       
-      - name: Build DOcker Image
+      - name: Build Docker Image
         run: docker build -t tanmaynewatia/arva-health-cafe-task .
 
       - name: Publish Image to docker hub
@@ -23,7 +23,7 @@ jobs:
   
   deploy:
     needs: build
-    runs-on: aws-ec2
+    runs-on: self-hosted
     steps:
       - name: Pull image from docker hub
         run: docker pull tanmaynewatia/arva-health-cafe-task:latest
