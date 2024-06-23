@@ -5,12 +5,18 @@ import { collection } from './databaseConnection.js';
 
 import express from 'express';
 import cors from 'cors';
+// import path from 'path';
 
 const app = express();
-const port = process.env.PORT || 5000;
+const port = process.env.PORT || 4000;
 
-app.use(cors());
 app.use(express.json());
+// const _dirname = path.dirname("")
+// const buildpath = path.join(_dirname, "../frontend/build")
+// app.use(express.static(buildpath));
+app.use(cors({
+    "origin": "*",
+}));
 
 app.get('/api/cafes', async (req, res) => {
     const allCafes = await collection.find({}).toArray();
