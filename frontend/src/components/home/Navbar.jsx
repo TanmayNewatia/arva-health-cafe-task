@@ -10,7 +10,7 @@ const Navbar = () => {
                 </button> */}
                 <ul className="text-black flex justify-center items-center gap-4">
                     <li className="nav-item">
-                        <a className="text-black" href="#">Sign In</a>
+                        <a className="text-black" href="/">Sign In</a>
                     </li>
                 </ul>
                 {/* <div>
